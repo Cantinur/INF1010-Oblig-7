@@ -49,8 +49,6 @@ public class GUILabyrint extends Application {
         //Setter opp en filchooser
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Velg en Labyrint fil");
-        fileChooser.getExtensionFilters().addAll(
-        new ExtensionFilter("Labyrint Filer", "*.in"));
         File selectedFile = fileChooser.showOpenDialog(primaryStage);
 
         if(selectedFile != null){
